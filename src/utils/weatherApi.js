@@ -23,7 +23,7 @@ const weatherApi = (latitude, longitude, callback) => {
         } else if(response.body.error) {
             callback('Unable to find location! Try another one!', undefined)
         } else {
-            callback(undefined, response.body.daily.data[0].summary  + ' It is currently ' + response.body.currently.temperature + ' degree outside. The high temperature today is ' + response.body.daily.data[0].temperatureHigh + ' degree, with the low of '+ response.body.daily.data[0].temperatureLow +'. There is ' + response.body.currently.precipProbability + '% chance of rain')
+            callback(undefined, response.body.daily.data[0].summary  + ' It is currently ' + response.body.currently.temperature + ' degree outside. The high temperature today is ' + response.body.daily.data[0].temperatureHigh + ' degree, with the low of '+ response.body.daily.data[0].temperatureLow +' degree. There is ' + response.body.currently.precipProbability + '% chance of rain')
         }
     } )
 }
