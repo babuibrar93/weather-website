@@ -1,3 +1,7 @@
+
+
+
+
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
